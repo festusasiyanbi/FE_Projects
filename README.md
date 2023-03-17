@@ -25,8 +25,5 @@ I have couple of projects in the repo based on vanilla CSS, and JavaScript each 
 - Music player
 - Translator
 
-## continued developement.
-**I'm currently learning React.js**
-
 
 Have fun exploring my repo!
