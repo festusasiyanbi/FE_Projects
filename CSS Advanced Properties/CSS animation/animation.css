@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-size: 1.5rem;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    background-color: brown;
+}
+.header {
+    color: white;
+    background-color: aliceblue;
+}
+.header-title {
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: black;
+
+}
+.menu-button {
+    background-color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: grey;
+    transition: all 0.5s;
+}
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+}
+.menu-icon::before {
+    transform: translate(-20px, -10px);
+}
+.menu-icon::after {
+    transform: translate(-20px, 10px);
+}
+
+
+nav a:hover, nav a:focus {
+    border-radius: 10px;
+    transform: scaleX(1.2);
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+nav li {
+    background-color: papayawhip;
+    list-style-type: none;
+    padding: 0.5rem;
+    
+
+}
+nav {
+    display: none;
+}
+nav a {
+    text-decoration: none;
+    padding: 0.5rem;
+    border-bottom: 1px solid brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav a:any-link {
+    color: white;
+  
+}
+
+
+:is(header:hover, header:focus-within) .menu-icon {
+   background-color: transparent;
+}
+:is(header:hover, header:focus-within) .menu-icon::before {
+    transform: translateX(-20px) rotate(45deg);
+}
+:is(header:hover, header:focus-within) .menu-icon::after {
+    transform: translateX(-20px) rotate(-45deg);
+}
+:is(header:hover, header:focus-within) nav {
+    display: block;
+}
+

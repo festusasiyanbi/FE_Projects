@@ -1,0 +1,297 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+}
+
+ h4 {
+    font-size: 12px;
+    color: hsl(184, 14%, 56%);
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+} 
+
+input[type="text"] {
+    color: hsl(183, 100%, 15%);
+    outline: none;
+    font-weight: 700;
+}
+input:focus {
+    border: 1px solid hsl(183, 100%, 15%);
+}
+input::placeholder {
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(185, 41%, 84%);
+    width: 50vw;
+    height: 70vh;
+}
+
+.container header {
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: hsl(183, 100%, 15%);
+    line-height: 0.7em;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.sub-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    height: 65%;
+    width: 80%;
+    padding: 1rem;
+}
+.input-icons img {
+    position: absolute;
+    padding: 8px;
+    
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.input-icons input {
+    height: 30px;
+}
+  
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(189, 41%, 97%);
+}
+
+.parameters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.selection {
+    width: 100%;
+}
+.selection h4 {
+    margin-bottom:  1rem;
+}
+.button-selection {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(2, 30px);
+    grid-gap: 1rem;
+    width: 100%;
+    
+}
+
+.button-selection button {
+    border-radius: 5px;
+    color: #ddd;
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background-color:  hsl(183, 100%, 15%);
+}
+
+.button-selection button:focus {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    box-shadow: inset 0 5px 5px rgba(0 0 0 0.3%);
+}
+
+.button-selection input{
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(189, 41%, 97%);
+}
+
+.button-selection input::placeholder {
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+}
+.button-selection input:focus {
+    border: 1px solid hsl(183, 100%, 15%);
+}
+aside {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 20px;
+    background-color: hsl(183, 100%, 15%);
+}
+aside #reset:hover {
+    transition: 0.3s;
+    background-color: #ddd;
+}
+aside #calculate:hover {
+    transition: 0.3s;
+    background-color: #ddd;
+}
+aside #reset + #calculate:hover {
+    transition: 0.3s;
+    background-color: #ddd;
+}
+
+aside #reset {
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    text-transform: uppercase;
+    background-color:  hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+aside #calculate {
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    text-transform: uppercase;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+aside button:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+.tip-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+aside h3 {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+}
+aside span {
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(185, 41%, 84%);
+}
+
+aside p {
+    font-size: 24px;
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .container {
+        height: 100vh;
+        width: fit-content;
+    }
+
+    .container header {
+        text-transform: uppercase;
+        margin: 1rem auto;
+        color: hsl(183, 100%, 15%);
+        line-height: 0.7em;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .sub-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border-radius: 2rem;
+        border-end-end-radius: 0;
+        border-end-start-radius: 0;
+        width: fit-content;
+    }
+
+    .input-icons {
+        margin-bottom: 1.5rem;
+    }
+    .selection {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .button-selection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 30px);
+        grid-gap: 1rem;
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        border-radius: 1rem;
+    }
+    aside button {
+        width: 80%;
+        position: absolute;
+        right: 20px;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 30px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}

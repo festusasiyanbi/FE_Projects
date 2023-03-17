@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://kit.fontawesome.com/637fba2540.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+  <div class="container">
+    <header>splitter</header>
+  <div class="sub-container">
+    <div class="parameters">
+      <div class="input-icons">
+        <h4>Bill</h4>
+        <img src="images/icon-dollar.svg" alt="icon-dollar-sign" width="25px" height="30px">
+      </i>
+        <input 
+              id="bill-input"
+              class="input-field" 
+              type="text"
+              placeholder="0"
+              >
+    </div>
+      <div class="selection">
+        <h4>Select Tip (%)</h4>
+        <div class="button-selection">
+        <button data-key="5" class="key">5</button>
+        <button data-key="10" class="key">10</button>
+        <button data-key="20" class="key">20</button>
+        <button data-key="40" class="key">40</button>
+        <button data-key="50" class="key">50</button>
+        <input 
+        id="tip-percentage"
+        type="text" 
+        placeholder="Custom"
+        >
+        </div>
+      </div>
+      <div class="input-icons">
+        <h4>Number of people</h4>
+        <img src="images/icon-person.svg" alt="icon-person" width="25px" height="30px">
+        <input 
+        id="person-input"
+        class="input-field" 
+        type="text" 
+        placeholder="0">  
+      </div>
+    </div>
+    <aside>
+      <div class="tip-amount"> 
+        <h3>Tip Amount<br> <span>/ person</span> </h3>
+        <p id="tip-output">$0.00</p>
+      </div>
+      <div class="total">
+        <h3>Total <br><span>/ person</span></h3>
+        <p id="total-output">$0.00</p>
+      </div>
+        <button id="calculate" type="submit" onclick="calculateTip()">calculate</button>
+        <button id="reset" type="submit" onclick="resetCalculator()">reset</button>
+    </aside>
+  </div>
+  </div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/festusasiyanbi">Festus Asiyanbi</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

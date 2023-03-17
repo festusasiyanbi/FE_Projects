@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: rgb(116 92 205);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 690px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 30px;
+}
+
+.wrapper{
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.wrapper .text-input{
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+
+.text-input .to-text{
+border-radius: 0px;
+border-left: 1px solid grey;
+}
+
+.text-input textarea{
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 7px;
+    background: none;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.controls, li, .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls{
+    list-style: none;
+    padding: 10px 12px;
+    margin: 10px 12px;
+}
+
+.controls .icons i{
+    width: 50px;
+    color: #9f9f9f;
+    font-size: 15px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.controls .icons{
+    width: 38%;
+}
+
+.controls .row.from .icons{
+    padding-right: 15px;
+    border-right: 1px solid grey;
+}
+
+.controls .row.to .icons{
+    padding-left: 15px;
+    border-left: 1px solid grey;
+}
+
+.controls .row select{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+}
+
+.controls .exchange{
+    color: #9f9f9f;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container button{
+    width: 100%;
+    color: white;
+    padding: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    border-radius: 7px;
+    background: rgb(116 92 205);
+}
+
+@media screen and (max-width: 960px) {
+    body{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .controls .icons i{
+        width: 2%;
+        color: #9f9f9f;
+        font-size: 10px;
+        justify-content: space-between;
+    }
+
+    #from, #to{
+        font-size: 0.8rem;
+        justify-content: space-between;
+    }
+
+    select{
+        text-align: center;
+    }
+
+    .exchange, select{
+        justify-content: space-between;
+    }
+}

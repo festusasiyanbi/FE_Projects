@@ -1,0 +1,107 @@
+/* I reset my CSS style because when browser renders a page it applies basic styles before you’ve even written a single style
+and this happens because each browser has its specific styles different from other browsers */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+	font: inherit;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-family:'Arial, sans-serif';
+}
+/* To position my app at the center of the screen, I assign the following properties to the class "app" */
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* styling the Calculator */
+.calculator {
+    background-color: #22252D;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 375px;
+    min-height: 640px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+/* styling where and how I display my input and output */
+.display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    color: white;
+    text-align: right;
+    flex: 1 1 0%;
+    padding: 1.5rem;
+    min-height: 200px;
+}
+.display .input {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+.display .output {
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+/* Styling the elements in the display area which is executed by the CleanInput() function in my JS file */
+.display .operator {
+    color: #EB6666;
+}
+.display .brackets,
+.display .percent {
+    color: #26FED7;
+}
+
+/* Styling the keys in the calculator app */
+
+.keys {
+    display: grid;  /* I made the keys a grid content so as to avoid using float or positioning */
+    grid-template-columns: repeat(4, 1fr); /* This positions all items in 4 columns with 1-fraction */
+    grid-template-rows: repeat(5, 1fr);  /* This positions all items in 5 columns with 1-fraction */
+    grid-gap: 1rem;
+    background-color: #292D36;
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+    min-height: 100%;
+    color: white;
+    margin-top: 1.5rem;
+}
+
+.keys .key {
+    padding-top: 100%;
+    color: white;
+    position: relative;  /* Assigning relative position to the keys parent element because I'll needed  to position the span elements at it's center */
+    border-radius: 1.25rem;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+.keys .key:hover {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);;
+}
+.keys .operator {
+    color: #EB6666;
+}
+.keys .action {
+    color: #26FED7;
+}
+
+
+/* these properties position each key at the center of its parent element */
+.keys .key span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    font-weight: 700;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/637fba2540.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>My Music app</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="top-bar">
+        <span class="now-playing">Playing x  of  y</span>
+    </div>
+        <div class="image-area">
+            <img src="" alt="">
+        </div>
+        <div class="song-details">
+            <p class="songname">Way</p><br>
+            <p class="artist">Skammar</p>
+        </div>
+    <div class="progress-area">
+        <div class="progress-bar">
+            <audio id="media-audio" src=""></audio>
+        </div>
+            <div class="duration">
+                <span class="current-time">0:00</span>
+                <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="seekTo()" >
+                <span class="max-duration">0:00</span>
+            </div>
+    </div>
+    <div class="volume">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100" value="99" class="volume-slider" onchange="setVolume()">
+        <i class="fa fa-volume-up"></i>
+    </div>
+        <div class="controls">
+            <div class="random-btn"  onclick="randomTrack()"><i  class="fa fa-random"></i></div>
+            <div class="prev-btn" onclick="prevTrack()"><i  class="fa fa-step-backward"></i></div>
+            <div class="playpause-btn" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-3x"></i></div>
+            <div class="next-btn" onclick="nextTrack()"><i  class="fa fa-step-forward"></i></div>
+            <div class="repeat-btn" onclick="repeatTrack()"><i  class="fa fa-repeat"></i></div>
+        </div>     
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
