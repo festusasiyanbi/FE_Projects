@@ -16,6 +16,7 @@ I have couple of projects in the repo based on vanilla CSS, and JavaScript each 
 - CSS Flexbox
 - CSS Grid
 - CSS Position
+- Basic calculator app with HTML and CSS
 
 ### JavaScript
 
@@ -24,6 +25,7 @@ I have couple of projects in the repo based on vanilla CSS, and JavaScript each 
 - Color playground
 - Music player
 - Translator
+- Quiz app
 
 
 Have fun exploring my repo!
