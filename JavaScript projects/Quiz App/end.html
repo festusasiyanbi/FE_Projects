@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="end.css">
+    <script src="https://kit.fontawesome.com/637fba2540.js" crossorigin="anonymous"></script>
+    <title>End page</title>
+</head>
+<body>
+    <form id="form">
+        <div class="finalscore-container">
+            <div class="circle">
+                <p id="finalscore"><span id="score"></span> <span id="pt"></span></p>
+            </div>
+        </div>
+        <div class="savescore-container">
+            <p>Save your score</p>
+            <div class="input-save">
+                <input
+                type="text"
+                id="username"
+                placeholder="Your name"
+                /> <button 
+                id="savescore"
+                disabled
+                >Save</button>
+            </div>
+            <div class="icons">
+                <div class="icon-play-again">
+                    <a href="game.html"> <i id="play-again" class="fa fa-rotate-left"></i></a>
+                    <p>Play again</p>
+                </div>
+                <div class="icon-share">
+                    <a href=""><i id="share" class="fa fa-share-nodes"></i></a>
+                    <p>Share</p>
+                </div>
+                <div class="icon-home">
+                    <a href="index.html"> <i id="home" class="fa fa-house"></i></a>
+                    <p>Home</p>
+                </div>
+                <div class="icon-leaderboard">
+                    <a href="leaderboard.html"><i id="leaderboard" class="fa-regular fa-star"></i></a>
+                    <p>Leaderboard</p>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <script src="end.js"></script>
+</body>
+</html>

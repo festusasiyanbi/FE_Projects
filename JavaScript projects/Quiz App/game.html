@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="App.css">
+    <script src="https://kit.fontawesome.com/637fba2540.js" crossorigin="anonymous"></script>
+    <title>Game page</title>
+</head>
+<body>
+    <main class="main-container">
+        <div class="top-container">
+            <i id="arrow" class="fa fa-arrow-left"></i>
+        </div>
+        <div class="question-container">
+            <div id="progress-bar"> <div id="progress-bar-full"></div></div>
+            <div class="question-score">
+            <p id="question-counter"><span id="current-question"> </span>  </p>
+            <p id="score"> Score: 0</p>
+            </div>
+            <div id="question"> </div>
+        </div>
+
+        <div class="choice-container">
+            <div class="choice">
+               <p class="choice-text" data-number="1"></p>
+            </div>
+            <div class="choice">
+                <p class="choice-text" data-number="2"></p>
+               </div>
+            <div class="choice">
+                <p class="choice-text" data-number="3"></p>
+            </div>
+            <div class="choice">
+                <p class="choice-text" data-number="4"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>

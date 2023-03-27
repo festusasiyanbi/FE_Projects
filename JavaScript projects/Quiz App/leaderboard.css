@@ -1,0 +1,72 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    vertical-align: baseline;
+    background-color: aliceblue;
+}
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.trophy-container {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(165, 110, 220);
+    padding: 5rem;
+    background-image: url(champion.png);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: center;
+}
+
+#arrow {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+p {
+    font-size: 2rem;
+    color: rgb(165, 110, 220);
+}
+#leaderboardList {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#leaderboardList li {
+    width: 100%;
+    height: 50px;
+    line-height: 3em;
+    background: white;
+    border: 2px solid rgb(165, 110, 220);
+    border-radius: 7px;
+    position: relative;
+    text-indent: 10px;
+    margin-bottom: 1rem;
+}
+#score {
+    position: absolute;
+    right: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+    #leaderboardList {
+        width: 100%;
+    }
+    #leaderboardList li {
+        width: 80%;
+    }
+}

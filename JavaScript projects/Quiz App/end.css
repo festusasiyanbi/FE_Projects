@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.savescore-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.savescore-container p {
+    font-size: 2.5rem;
+}
+
+.input-save {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    height: 50px;
+    width: 70%;
+    margin-bottom: 2rem;
+    text-indent: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 3em;
+    font-weight: 550;
+    color: rgb(165, 110, 220);
+}
+
+input:focus {
+    border: 2px solid rgb(165, 110, 220);
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+.finalscore-container {
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(165, 110, 220);
+}
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+#score {
+    font-size: 4rem;
+    font-weight: 800;
+}
+#pt {
+    font-size: 2rem;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 3.5rem;
+    width: 35%;
+    text-align: center;
+    margin: 5rem 10rem;
+}
+
+.icons i {
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+#play-again {
+    background-color: cornflowerblue;
+}
+
+#share {
+    background-color: rgb(27, 3, 3);
+}
+
+#home {
+    background-color: orange;
+}
+
+#leaderboard {
+    background-color: brown;
+}
+.icons p {
+    color: black;
+    font-size: 1rem;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 2px solid rgb(165, 110, 220);
+    color: rgb(165, 110, 220);
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 400px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    .savescore-container {
+        margin-top: 15rem;
+        width: 100vw;
+    }
+    .icons {
+        width: 100%;
+        margin: 2rem 10rem;
+    }
+    .input-save {
+        width: 100%;
+    }
+
+    .icons i {
+        border-radius: 10px;
+        margin-bottom: .5rem;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .savescore-container {
+        margin-top: 15rem;
+        width: 100vw;
+    }
+}
+@media only screen and (max-height: 950px) {
+    .savescore-container {
+        margin-top: 20rem;
+        width: 100vw;
+    }
+    .input-save {
+        width: 100%;
+    }
+
+    .icons {
+        width: 100%;
+        margin: 5rem 10rem;
+    }
+    .icons i {
+        border-radius: 10px;
+        margin-bottom: .5rem;
+    }
+}
