@@ -8,7 +8,7 @@ I have few projects in the repo already and I'll keep pushing more projects as I
 
 ## Description
 
-I have couple of projects in the repo based on vanilla CSS, and JavaScript each  which I've shortlisted below with regards the category of language it belongs
+I have couple of projects in the repo based on CSS, Vanilla JavaScript, and React each  which I've shortlisted below with regards the category of language it belongs
 
 ### CSS
 
@@ -27,5 +27,11 @@ I have couple of projects in the repo based on vanilla CSS, and JavaScript each 
 - Translator
 - Quiz app
 
+### React
+
+- ColorPlayground
+- GroceryListApp
+- FetchDataFromApi challenge
+- Using React router, context API, and Axios.
 
 Have fun exploring my repo!
